@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lionel Messi | El mejor de todos los tiempos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --celeste: #74acdf;
+      --blanco: #f7f9fc;
+      --oscuro: #0b1d36;
+      --dorado: #d4af37;
+      --rosa: #f7b5c3;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Source Sans 3", sans-serif;
+      background: var(--oscuro);
+      color: #e8eef6;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 40px;
+      padding: 40px 8%;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(116,172,223,0.25), transparent 40%),
+        linear-gradient(160deg, #071525 0%, #123055 55%, #0b1d36 100%);
+    }
+
+    .hero-text h1 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: clamp(3.2rem, 8vw, 7rem);
+      letter-spacing: 2px;
+      line-height: 0.9;
+    }
+
+    .hero-text h1 span { color: var(--celeste); }
+
+    .hero-text p {
+      max-width: 520px;
+      margin: 18px 0 28px;
+      font-size: 1.15rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: var(--oscuro);
+      background: var(--celeste);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover { background: #fff; }
+
+    .hero-photo {
+      width: 100%;
+      max-width: 420px;
+      justify-self: end;
+      border-radius: 24px;
+      border: 6px solid rgba(255,255,255,0.12);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+      object-fit: cover;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    section.alt { background: #10243f; }
+
+    h2 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .kicker {
+      color: var(--dorado);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .layout.reverse { grid-template-columns: 0.9fr 1.1fr; }
+
+    .layout img {
+      width: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+      max-height: 420px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.28);
+    }
+
+    ul.facts {
+      margin-top: 16px;
+      padding-left: 18px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .card strong {
+      display: block;
+      font-size: 1.8rem;
+      color: var(--celeste);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 8%;
+      color: #9bb3cc;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    @media (max-width: 900px) {
+      header, .layout, .layout.reverse, .cards {
+        grid-template-columns: 1fr;
+      }
+      .hero-photo { justify-self: center; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="inicio">
+    <div class="hero-text">
+      <p class="kicker">Presentación de fútbol</p>
+      <h1>LIONEL<br><span>MESSI</span></h1>
+      <p>
+        Lionel Andrés Messi Cuccittini nació el 24 de junio de 1987 en Rosario, Argentina.
+        Es considerado por millones de personas como el mejor futbolista de la historia:
+        un genio del balón, capitán de la Selección Argentina y símbolo de esfuerzo,
+        humildad y talento.
+      </p>
+      <nav>
+        <a href="#origen">Origen</a>
+        <a href="#barcelona">Barcelona</a>
+        <a href="#mundial">Mundial 2022</a>
+        <a href="#miami">Inter Miami</a>
+        <a href="#legado">Legado</a>
+      </nav>
+    </div>
+    <img class="hero-photo" src="images/messi_argentina.jpg" alt="Retrato de Lionel Messi con la camiseta de Argentina">
+  </header>
+
+  <section id="origen">
+    <p class="kicker">Sección 1</p>
+    <h2>De Rosario al mundo</h2>
+    <div class="layout">
+      <div>
+        <p>
+          Messi creció en el barrio de Las Heras, en Rosario. Desde chico jugaba en la calle
+          y en Newell's Old Boys, el club de su ciudad. Tenía un don especial: aunque era
+          pequeño, driblaba a rivales mucho más grandes con una pelota pegada al pie.
+        </p>
+        <p>
+          A los 11 años le diagnosticaron una deficiencia de hormona de crecimiento.
+          Su familia no podía pagar el tratamiento, y el Fútbol Club Barcelona apostó por él.
+          Así viajó a España y empezó una historia que cambió el fútbol para siempre.
+        </p>
+        <ul class="facts">
+          <li>Nacimiento: 24 de junio de 1987, Rosario, Argentina.</li>
+          <li>Primer club: Newell's Old Boys (infantiles).</li>
+          <li>Llegó a La Masia, la academia del Barcelona, en 2000.</li>
+        </ul>
+      </div>
+      <img src="images/messi_argentina.jpg" alt="Lionel Messi con la camiseta de la Selección Argentina">
+    </div>
+  </section>
+
+  <section id="barcelona" class="alt">
+    <p class="kicker">Sección 2</p>
+    <h2>La era Barcelona</h2>
+    <div class="layout reverse">
+      <img src="images/messi_barcelona.jpg" alt="Messi de espaldas con la 10 del Barcelona celebrando">
+      <div>
+        <p>
+          En el Barcelona, Messi debutó con el primer equipo en 2004. Durante más de
+          17 temporadas se convirtió en el 10 más famoso del mundo. Ganó ligas, Copas
+          del Rey y Champions League. Junto a Xavi e Iniesta formó un equipo inolvidable.
+        </p>
+        <p>
+          Su estilo es único: gambetas cortas, visión de juego, goles de falta y pases
+          imposibles. En el Camp Nou la gente lo llamaba “la Pulga” por su tamaño y
+          por lo difícil que era quitarle la pelota.
+        </p>
+        <ul class="facts">
+          <li>Más de 670 goles con la camiseta blaugrana.</li>
+          <li>Múltiples Champions League y títulos de Liga.</li>
+          <li>Varios premios Balón de Oro ganados como jugador del Barça.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="mundial">
+    <p class="kicker">Sección 3</p>
+    <h2>El sueño cumplido: Qatar 2022</h2>
+    <div class="layout">
+      <div>
+        <p>
+          Durante años, a Messi le faltaba el título más grande con Argentina: la Copa
+          del Mundo. En 2021 ya había ganado la Copa América. En Qatar 2022 lideró a
+          la Selección hasta la final contra Francia.
+        </p>
+        <p>
+          El 18 de diciembre de 2022, Argentina se coronó campeona del mundo.
+          Messi levantó la Copa y el país entero celebró. Fue el cierre perfecto
+          de una carrera llena de espera, presión y grandeza.
+        </p>
+        <ul class="facts">
+          <li>Campeón del Mundo con Argentina en 2022.</li>
+          <li>Campeón de América en 2021 y 2024.</li>
+          <li>Capitán y máximo referente de la Albiceleste.</li>
+        </ul>
+      </div>
+      <img src="images/messi_mundial.jpg" alt="Messi besando la Copa del Mundo con la camiseta 10 de Argentina">
+    </div>
+  </section>
+
+  <section id="miami" class="alt">
+    <p class="kicker">Sección 4</p>
+    <h2>Una nueva etapa en Inter Miami</h2>
+    <div class="layout reverse">
+      <img src="images/messi_miami.jpg" alt="Messi celebrando con la camiseta rosa de Inter Miami y una corona">
+      <div>
+        <p>
+          Después de un paso por el Paris Saint-Germain, Messi llegó a Inter Miami
+          de la MLS en 2023. Su fichaje revolucionó el fútbol en Estados Unidos:
+          estadios llenos, camisetas agotadas y una nueva generación de hinchas.
+        </p>
+        <p>
+          Aunque ya no es un adolescente, sigue haciendo jugadas mágicas. En Miami
+          demostró que el talento no tiene fecha de vencimiento y que el fútbol
+          también se disfruta cerca de la familia.
+        </p>
+        <ul class="facts">
+          <li>Llegó a Inter Miami en 2023.</li>
+          <li>Ganó la Leagues Cup en su primera temporada.</li>
+          <li>Ayudó a popularizar la MLS en todo el mundo.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="legado">
+    <p class="kicker">Sección 5</p>
+    <h2>Récords y legado</h2>
+    <div class="layout">
+      <div>
+        <p>
+          Más allá de los números, Messi dejó una lección: el trabajo constante,
+          el respeto por el rival y el amor por la camiseta. Inspiró a niñas y niños
+          de todo el planeta a soñar con una pelota.
+        </p>
+        <p>
+          Sus trofeos llenan vitrinas, pero su mayor premio es el cariño de la gente.
+          Para Argentina es un héroe nacional. Para el fútbol, una leyenda viva.
+        </p>
+      </div>
+      <img src="images/messi_mundial.jpg" alt="Messi con la Copa del Mundo, el mayor premio de su carrera">
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <strong>8</strong>
+        Balones de Oro, un récord histórico en el fútbol mundial.
+      </article>
+      <article class="card">
+        <strong>800+</strong>
+        Goles oficiales en clubes y selección a lo largo de su carrera.
+      </article>
+      <article class="card">
+        <strong>1</strong>
+        Copa del Mundo que cerró su sueño con la Selección Argentina.
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    Página de presentación creada para GitHub Pages · Tema: Lionel Messi · Imágenes en la carpeta <code>images/</code>
+  </footer>
+</body>
+</html>
